@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Widget -->
+
+    <style name="Widget.Bakcell.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/til_stroke_color</item>
+        <item name="android:textColorHint">@color/til_hint_color</item>
+        <item name="helperTextTextColor">@color/til_hint_color</item>
+        <item name="hintTextColor">@color/til_hint_color</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="endIconTint">?colorSecondary</item>
+    </style>
+
+    <style name="Widget.Bakcell.TextInputEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_dark</item>
+        <item name="android:textColor">?tilTextColor</item>
+    </style>
+
+    <style name="Widget.Bakcell.DatePicker.HeaderLayout" parent="Widget.MaterialComponents.MaterialCalendar.HeaderLayout">
+        <item name="android:background">@color/colorMain</item>
+    </style>
+
+    <style name="Widget.Bakcell.Button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="backgroundTint">?colorSecondary</item>
+        <item name="android:textColor">?colorOnSecondary</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Bakcell.Bold.Headline</item>
+    </style>
+
+    <style name="Widget.Bakcell.Button.TextButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">?colorSecondary</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Bakcell.Bold.Headline</item>
+    </style>
+
+    <style name="Widget.Bakcell.FloatingActionButton" parent="">
+        <item name="android:src">@drawable/ic_arrow_forward</item>
+        <item name="backgroundTint">@color/indigo_100</item>
+        <item name="tint">@color/white</item>
+    </style>
+
+
+    <!-- TextAppearance -->
+
+    <style name="TextAppearance.Bakcell.Tab" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Bakcell.ToolbarTitle" parent="">
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TextAppearance.Bakcell.Bold.Title1" parent="">
+        <item name="android:textSize">28sp</item>
+        <item name="android:letterSpacing">0.034</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TextAppearance.Bakcell.Bold.Title2" parent="">
+        <item name="android:textSize">22sp</item>
+        <item name="android:letterSpacing">0.028</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TextAppearance.Bakcell.Bold.Headline" parent="">
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">0.024</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TextAppearance.Bakcell.Regular.Callout" parent="">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.021</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextAppearance.Bakcell.Regular.Body" parent="">
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">0.024</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+
+    <!-- ShapeAppearance -->
+
+    <style name="ShapeAppearance.Bakcell.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="ShapeAppearance.Bakcell.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Bakcell.CornerSize50Percent" parent="">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Bakcell.CornerSize8" parent="">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="cornerSize">8dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+</resources>

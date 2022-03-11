@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Bakcell.Main" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorAccent">@color/colorMain</item>
+        <item name="colorPrimary">@color/red_800</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_300</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/teal_300</item>
+        <item name="colorOnSecondaryVariant">@color/white</item>
+
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorOnBackground">@color/black_high_emphasis</item>
+
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:textColorSecondary">@color/black_high_emphasis</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:autofilledHighlight" tools:targetApi="o">@color/transparent</item>
+
+        <item name="android:ambientShadowAlpha">0.05</item>
+        <item name="android:spotShadowAlpha">0.05</item>
+
+        <!-- Custom -->
+        <item name="textHelperColor">@color/indigo_900</item>
+
+        <!-- TextInputLayout -->
+        <item name="tilTextColor">@color/black_high_emphasis</item>
+        <item name="tilStrokeNormalColor">@color/grey_input_on</item>
+        <item name="tilStrokeFocusedColor">@color/teal_300</item>
+
+        <!-- BottomNavigationView -->
+        <item name="bottomNavCheckedTextColor">@color/red_800</item>
+        <item name="bottomNavUnCheckedTextColor">@color/grey_input_on</item>
+        <item name="bottomNavCheckedIconTint">@color/red_800</item>
+        <item name="bottomNavUnCheckedIconTint">@color/grey_input_on</item>
+    </style>
+
+    <style name="Theme.Bakcell.ColdStart" parent="Theme.Bakcell.Main">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowBackground">@drawable/bg_cold_start</item>
+    </style>
+
+    <style name="Theme.Bakcell.Dialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.Bakcell.DateDialog" parent="@style/ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/colorMain</item><!--selected day fill color-->
+        <item name="colorAccent">@color/white</item><!--selected day color-->
+        <item name="colorOnSurface">@color/colorMain</item><!--days color-->
+        <item name="android:textColor">@color/colorMain</item><!--weekly text color-->
+        <item name="colorSurface">@color/white</item><!--month background color-->
+
+        <item name="materialCalendarHeaderLayout">@style/Widget.Bakcell.DatePicker.HeaderLayout</item>
+        <item name="shapeAppearanceSmallComponent">
+            @style/ShapeAppearance.Bakcell.SmallComponent
+        </item>
+        <item name="shapeAppearanceMediumComponent">
+            @style/ShapeAppearance.Bakcell.MediumComponent
+        </item>
+    </style>
+
+    <style name="Theme.Bakcell.TimeDialog" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="colorPrimary">@color/colorMain</item><!--Selected text fill color-->
+        <item name="colorOnPrimary">@color/white</item><!--Selected text color-->
+        <item name="colorSurface">@color/white</item><!--Background-->
+        <item name="colorOnSurface">@color/black_high_emphasis</item><!--time text colors-->
+        <item name="shapeAppearanceSmallComponent">
+            @style/ShapeAppearance.Bakcell.SmallComponent
+        </item>
+        <item name="shapeAppearanceMediumComponent">
+            @style/ShapeAppearance.Bakcell.MediumComponent
+        </item>
+    </style>
+</resources>

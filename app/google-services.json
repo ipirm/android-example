@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "925929160138",
+    "firebase_url": "https://aysurucu-0-default-rtdb.firebaseio.com",
+    "project_id": "aysurucu-0",
+    "storage_bucket": "aysurucu-0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925929160138:android:46957d29c001b998dd2333",
+        "android_client_info": {
+          "package_name": "az.azerconnect.bakcell.az"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925929160138-bhle326eleip2k7b43fb989e6q7mql6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFNccQPlijY5i9iJuM8cFsLMBacS6TQhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925929160138-bhle326eleip2k7b43fb989e6q7mql6q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

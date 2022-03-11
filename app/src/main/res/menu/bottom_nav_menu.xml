@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/gamesNavId"
+        android:icon="@drawable/ic_games"
+        android:title="@string/nav_title_games" />
+    <item
+        android:id="@+id/myTeamNavId"
+        android:icon="@drawable/ic_my_team"
+        android:title="@string/nav_title_my_team" />
+    <item
+        android:id="@+id/notificationsNavId"
+        android:icon="@drawable/ic_notifications"
+        android:title="@string/nav_title_notifications" />
+    <item
+        android:id="@+id/stadiumsNavId"
+        android:icon="@drawable/ic_stadiums"
+        android:title="@string/nav_title_stadiums" />
+</menu>

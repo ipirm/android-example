@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="az.azerconnect.data.enums.UiState" />
+
+        <variable
+            name="viewModel"
+            type="az.azerconnect.bakcell.ui.launch.auth.login.LoginVM" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="24dp">
+
+            <az.azerconnect.bakcell.utils.widgets.TextInputLayout
+                android:id="@+id/emailTil"
+                style="@style/Widget.Bakcell.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="48dp"
+                android:hint="@string/in_login_email"
+                app:layout_constraintBottom_toTopOf="@+id/passwordTil"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.Bakcell.TextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:text="@={viewModel.email}"
+                    bind:enabled="@{viewModel.uiState != UiState.LOADING}" />
+            </az.azerconnect.bakcell.utils.widgets.TextInputLayout>
+
+            <az.azerconnect.bakcell.utils.widgets.TextInputLayout
+                android:id="@+id/passwordTil"
+                style="@style/Widget.Bakcell.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/in_login_password"
+                app:endIconMode="password_toggle"
+                app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+                app:layout_constraintTop_toBottomOf="@+id/emailTil">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.Bakcell.TextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:text="@={viewModel.password}"
+                    bind:enabled="@{viewModel.uiState != UiState.LOADING}" />
+            </az.azerconnect.bakcell.utils.widgets.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/loginBtn"
+                style="@style/Widget.Bakcell.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/in_login_sign_in"
+                app:layout_constraintBottom_toTopOf="@+id/forgotBtn"
+                app:layout_constraintTop_toBottomOf="@+id/passwordTil" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/forgotBtn"
+                style="@style/Widget.Bakcell.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:text="@string/in_login_forgot_password"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/registerBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+                app:rippleColor="@color/white_10" />
+
+            <TextView
+                android:id="@+id/needAccountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/in_login_need_account"
+                android:textColor="@color/teal_500"
+                app:layout_constraintBottom_toBottomOf="@+id/registerBtn"
+                app:layout_constraintEnd_toStartOf="@+id/registerBtn"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/registerBtn" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/registerBtn"
+                style="@style/Widget.Bakcell.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:text="@string/in_login_sign_up"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/needAccountTxt"
+                app:rippleColor="@color/white_10" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TextInputLayout -->
+    <declare-styleable name="TextInputLayout">
+        <attr name="errorText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="WindowCenteredImageView">
+        <attr name="src" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="StateView">
+        <attr name="sv_errorViewId" format="reference" />
+        <attr name="sv_loadingViewId" format="reference" />
+        <attr name="sv_emptyViewId" format="reference" />
+        <attr name="sv_retryViewId" format="reference" />
+        <attr name="sv_refreshLayoutId" format="reference" />
+        <attr name="onRetryClick" format="string" />
+
+        <attr name="sv_viewState" format="enum">
+            <enum name="content" value="0" />
+            <enum name="loading" value="1" />
+            <enum name="error" value="2" />
+            <enum name="empty" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>

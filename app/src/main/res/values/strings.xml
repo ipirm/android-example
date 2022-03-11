@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Bakcell</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="retry">Retry</string>
+    <string name="empty_label"> </string>
+    <string name="share">Share</string>
+
+    <string name="nav_title_games">Oyunlar</string>
+    <string name="nav_title_my_team">Komandam</string>
+    <string name="nav_title_stadiums">Stationlar</string>
+    <string name="nav_title_notifications">Bildirişlər</string>
+
+    <string name="in_login_email">Email</string>
+    <string name="in_login_password">Password</string>
+    <string name="in_login_sign_in">Sign in</string>
+    <string name="in_login_forgot_password">Forgot password?</string>
+    <string name="in_login_sign_up">Sign up</string>
+    <string name="in_login_need_account">Need an account?</string>
+</resources>
